@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mod2_solution</title>
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .contain2 h1{
+            margin: 20px;
+            text-align: center;
+            border-bottom: 1px solid black;
+        }
+       
+        .container{
+            display: flex;   
+            max-width: 1200px;
+            flex-wrap: wrap;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: bisque;
+        }
+
+        .section{
+            position: relative;
+            border: 1px solid black;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: 10px;
+            background: darkgoldenrod;
+        }
+        .section .habibi{
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            background: bisque;
+            padding: 5px 10px;
+            border: 1px solid black;
+            margin-bottom: 20px;
+        }
+        @media(min-width : 992px){
+            .section{
+                width: 30%;
+            }
+        }
+        @media(min-width : 768px) and (max-width: 991px){
+            .section{
+                width: 45%;
+            }
+            .section:nth-child(3){
+                width: 92%;
+            }
+        }
+        @media(max-width: 767px){
+            .section{
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="contain2">
+        <h1>Our Menu</h1>
+    </div>
+    <div class="container">
+
+        <section class="section">
+            <div class="habibi">Apple</div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolor eligendi rem temporibus, adipisci culpa explicabo neque repudiandae enim iste cumque laborum sed fuga.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, quis modi nihil illum beatae ad obcaecati, distinctio nemo illo repellendus ducimus.
+                </p>
+        </section>
+
+        <section class="section">    
+            <div class="habibi">Samsung</div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolor eligendi rem temporibus, adipisci culpa explicabo neque repudiandae enim iste cumque laborum sed fuga.
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ex obcaecati tenetur, asperiores optio cum possimus est amet maiores! Natus, veniam provident.
+                </p>
+        </section>
+
+        <section class="section">
+            <div class="habibi">Asus</div>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi dolor eligendi rem temporibus, adipisci culpa explicabo neque repudiandae enim iste cumque laborum sed fuga.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repudiandae obcaecati ut ratione, temporibus quas officiis numquam ullam dignissimos. Tenetur, pariatur?
+                </p>
+        </section>
+
+    </div>
+</body>
+</html>
